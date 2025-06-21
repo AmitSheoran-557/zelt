@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="absolute z-50 w-full top-4">
+    <!-- <nav class="absolute z-50 w-full top-4">
         <div
             class="flex justify-between items-center p-3 max-w-3xl mx-auto backdrop-blur-lg bg-white/10 shadow-lg rounded-sm">
             <a href="/"><img class="max-w-14 w-full" src="https://zelt.app/wp-content/themes/zelt/assets/img/logo.svg"
@@ -31,7 +31,51 @@
                 class="bg-yellow-500 cursor-pointer hover:bg-white hover:border-yellow-500 hover:text-yellow-500 border border-transparent text-black px-3 !py-2 rounded-sm transition-all ease-linear duration-300">See
                 demo</button>
         </div>
+    </nav> -->
+    <nav class="flex justify-between -center xl:py-5 bg-transparent -z-10 lg:py-4 py-3 max-lg:h-full">
+        <div
+            class="flex justify-between -center p-3 w-full max-w-3xl mx-auto backdrop-blur-lg bg-transparent shadow-lg rounded-sm">
+            <a href="/">
+                <img class="max-w-14 w-full" src="https://zelt.app/wp-content/themes/zelt/assets/img/logo.svg"
+                    alt="zelt-img">
+            </a>
+
+            <!-- Navigation List -->
+            <div
+                class="flex menulist justify-center items-center duration-300 ease-linear w-full -right-full max-lg:min-h-screen fixed top-0 z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent bg-black text-white">
+                <div class="flex flex-col gap-6 lg:flex-row lg:gap-5 text-lg p-5 lg:p-0">
+                    <a href="/"
+                        class="hover:text-yellow-500 transition-all ease-linear duration-300 font-medium">Product</a>
+                    <a href="/"
+                        class="hover:text-yellow-500 transition-all ease-linear duration-300 font-medium">Resources</a>
+                    <a href="/"
+                        class="hover:text-yellow-500 transition-all ease-linear duration-300 font-medium">Pricing</a>
+                    <a href="/"
+                        class="hover:text-yellow-500 transition-all ease-linear duration-300 font-medium">Login</a>
+                </div>
+            </div>
+
+            <!-- Desktop Button -->
+            <div class="max-lg:hidden">
+                <button
+                    class="bg-yellow-500 cursor-pointer hover:bg-white hover:border-yellow-500 hover:text-yellow-500 border border-transparent text-black px-3 py-2 rounded-sm transition-all ease-linear duration-300">
+                    See demo
+                </button>
+            </div>
+
+            <!-- Hamburger Menu Icon -->
+            <div id="menu-bar"
+                class="flex flex-col lg:hidden menubar justify-between cursor-pointer z-[200] w-[25.5px] h-5">
+                <span
+                    class="w-full h-1 rounded-md transition-all duration-500 bg-black mb-1 menubarFirst origin-left"></span>
+                <span
+                    class="w-full h-1 rounded-md transition-all duration-500 bg-black mb-1 menubarSecond origin-left"></span>
+                <span
+                    class="w-full h-1 rounded-md transition-all duration-500 bg-black menubarThird origin-left"></span>
+            </div>
+        </div>
     </nav>
+
 
     <div id="main">
         <div id="page" class="w-screen h-screen relative">
