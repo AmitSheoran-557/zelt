@@ -1,34 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuicon = document.querySelector(".menubar");
-    const menuList = document.querySelector(".menulist");
-    const menubarFirst = document.querySelector(".menubarFirst");
-    const menubarSecond = document.querySelector(".menubarSecond");
-    const menubarThird = document.querySelector(".menubarThird");
-    const body = document.body;
-
-    menuicon.addEventListener("click", toggleMenu);
-
-    function toggleMenu() {
-        if (window.innerWidth < 1024) {
-            menuList.classList.toggle("-right-full");
-            menuList.classList.toggle("right-0");
-            menubarFirst.classList.toggle("rotate-[44deg]");
-            menubarSecond.classList.toggle("hidden");
-            menubarThird.classList.toggle("-rotate-[44deg]");
-            body.classList.toggle("overflow-hidden");
-        }
-    }
-
-    const menuItems = document.querySelectorAll(".menulist button, .menulist a");
-    menuItems.forEach(item => {
-        item.addEventListener("click", () => {
-            if (window.innerWidth < 1024) {
-                toggleMenu();
-            }
-        });
-    });
-});
-
 function loco() {
     gsap.registerPlugin(ScrollTrigger);
 
